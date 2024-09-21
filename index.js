@@ -26,7 +26,7 @@ app.post("/api", async (req, res) => {
     options = {
       args: [...chrome.args, "--hide-scrollbars", "--disable-web-security"],
       defaultViewport: chrome.defaultViewport,
-      executablePath: await chrome.executablePath,
+      executablePath: await chrome.executablePath("https://my-media-assets.s3.amazonaws.com/chromium-v126.0.0-pack.tar"),
       headless: true,
       ignoreHTTPSErrors: true,
     };
