@@ -28,7 +28,7 @@ app.post("/generate-pdf", async (req, res) => {
     const browser = await puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
-      executablePath: process.env.CHROME_EXECUTABLE_PATH || await chromium.executablePath(`https://omnileadzdev.s3.ap-south-1.amazonaws.com/chromium-v127.0.0-pack.tar`),
+      executablePath: process.env.CHROME_EXECUTABLE_PATH || await chromium.executablePath(`https://omnileadzdev.s3.ap-south-1.amazonaws.com/chromium-v126.0.0-pack.tar`),
       headless: chromium.headless,
     });
     console.log(4);
