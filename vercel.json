@@ -1,6 +1,6 @@
 {
   "functions": {
-    "/*": { "maxDuration": 59 }
+    "/*": { "maxDuration": 60 }
   },
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
